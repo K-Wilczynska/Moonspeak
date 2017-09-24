@@ -1,0 +1,25 @@
+@import "variables";
+
+.statement{
+    padding: 0;
+}
+
+.statement-wrapper{
+    background-color: $background-light;
+    p{
+        text-align: center;
+        padding: 100px 10px;
+        font-weight: 100;
+        font-size: 30px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+  .statement-wrapper{
+      p{
+          padding: 200px 0;
+      }
+  }
+}

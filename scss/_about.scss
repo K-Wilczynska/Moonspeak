@@ -1,0 +1,53 @@
+@import "variables";
+
+.about-wrapper{
+    color: $text_color_about;
+    font-weight: 300;
+}
+
+.about-image-wrapper{
+    display: none;
+    padding: 0;
+
+    img{
+        width: 100%;
+    }
+}
+
+.about-features{
+    width: 100%;
+}
+
+.about-features-item{
+    &:not(:last-child){
+        padding-bottom: 30px;
+    }
+}
+
+.about-feature-items{
+    max-width: 300px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px){
+    .about-feature-items{
+        padding-top: 5%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .about-image-wrapper{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .about-feature-items{
+        max-width: 400px;
+        padding-top: 16%;
+        padding-left: 10%;
+        margin: 0;
+    }
+}

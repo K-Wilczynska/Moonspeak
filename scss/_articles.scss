@@ -1,0 +1,39 @@
+@import "variables";
+
+#articles{
+    background-color: $background-light;
+}
+
+.articles-wrapper{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.article-item-wrapper{
+
+}
+
+.article-item{
+    padding: 35px 60px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+
+    h3{
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0 0 35px 0;
+    }
+
+    p{
+        font-weight: 300;
+        color: $text_color_dark;
+        margin-bottom: 50px;
+    }
+
+    a{
+        color: $text_color_links;
+        text-decoration: underline;
+        font-weight: 400;
+    }
+}

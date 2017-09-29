@@ -21,4 +21,23 @@ $(document).ready(function() {
             }
         });
     }
+
+// navigation smooth scroll
+
+    $(".menu-item").find("a").on("click", function(e){
+
+        var $href = $(this).attr('href');
+        var $anchor = $($href).offset().top;
+        $('html, body').animate({
+            scrollTop: $anchor
+        },1000);
+    });
+
+    $(".logo, .logo-mobile").on("click", function(){
+        $('html, body').animate({
+            scrollTop: 0
+        },1000)
+
+    });
+
 });

@@ -5,8 +5,8 @@
 }
 
 .articles-wrapper{
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .article-item-wrapper{
@@ -35,5 +35,12 @@
         color: $text_color_links;
         text-decoration: underline;
         font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .articles-wrapper{
+        padding-top: 100px;
+        padding-bottom: 80px;
     }
 }

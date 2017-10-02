@@ -40,4 +40,23 @@ $(document).ready(function() {
 
     });
 
+// google map
+
+    $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyCyRoTT8eBgjEA-gdiQhkXb0Gkemh9pRGU", function(){
+
+        initMap();
+    });
+
+    function initMap() {
+        var seattle = {lat: 47.621487, lng: -122.348125};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: seattle
+        });
+        var marker = new google.maps.Marker({
+            position: seattle,
+            map: map
+        });
+    }
+
 });

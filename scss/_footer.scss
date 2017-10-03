@@ -1,0 +1,46 @@
+@import "variables";
+
+#footer{
+    background-color: $background-light;
+}
+
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 125px;
+}
+
+.copyright{
+    p{
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
+.social-icons{
+    font-size: 25px;
+    i{
+        padding: 0 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.fa-twitter:hover{
+    color: rgb(85, 172, 238);
+}
+
+.fa-facebook-square:hover{
+    color: rgb(59, 89, 152);
+}
+
+.fa-instagram:hover{
+    color: rgb(188, 42, 141);
+}
+
+.fa-youtube-play:hover{
+    color: rgb(255, 0, 0);
+}
